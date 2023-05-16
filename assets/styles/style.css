@@ -3,10 +3,134 @@ header{
     width: 100%;
     height: 960px;
     background-color: #DDDDDD;
+    flex-direction: column;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 138px;
+}
+.roca-with-dot{
+   font-size: 38px;
+   font-family: Poppins-ExtraBold;
+   color: #0081FF;
+}
+.roca{
+    color: black;
 }
 .roca-header{
     margin-top: 48px;
     margin-left: 52px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
+.resume-template{
+    font-size: 13px;
+    color: rgba(179, 179, 179, 1);
+    font-family: Montserrat-Regular;
+}
+.aboutme-header{
+    margin-top: 25px;
+    margin-right: 118px;
+    position: relative;
+}
+.aboutme-number{
+    font-size: 158px;
+    font-family: Poppins-ExtraBold;
+    color: #1C1C1C;
+}
+.aboutme-header-text{
+    position: absolute;
+    font-size: 43px;
+    font-family: Poppins-ExtraBold;
+    color: rgba(55, 55, 55, 1);
+    width: 227px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.header-main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 53.5%;
+    margin-bottom: 181px;
+    color: #212121;
+}
+.header-main-top{
+    font-size: 50px;
+    font-family: GlacialIndifference-Regular;
+    margin-left: 6.86px;
+}
+.header-main-middle{
+    height: 173px;
+    font-size: 71px;
+    font-family: GlacialIndifference-Bold;
+    position: relative;
+    margin-bottom: 15.2px;
+}
+.header-main-bottom{
+    font-size: 24px;
+    font-family: GlacialIndifference-Regular;
+    position: absolute;
+    top: 97.77px;
+    left: 7.58px;
+}
+.header-icons{
+    margin-bottom: 13px;
+    padding-left: 18.93px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.twitter-ico{
+    width: 29px;
+    height: 30px;
+    padding: 0%;
+}
+.youtube-ico{
+    width: 29px;
+    height: 30px;
+}
+.rss-ico{
+    width: 25px;
+    height: 24px;
+}
+.facebook-ico, .google-ico{
+    height: 30px;
+    width: 30px;
+}
+.clients-header{
+    text-align: end;
+    margin-right: 184px;
+    font-size: 24px;
+    font-family: Montserrat-Bold;
+    color: #E93656;
+}
+.satisfied-clients{
+    color: #212121;
+}
+.progress-container{
+    width: 340px;
+    height: 6px;
+    background-color: #EBEBEB;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-bottom: 47px;
+    margin-right: 117px;
+}
+.progress-bar{
+    height: 6px;
+    background-color: #E93656;
+    border-radius: 3px;
+    animation: fill-progress 4s ease-in-out forwards;
+}
+@keyframes fill-progress {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+}
+
+/* header */

@@ -351,4 +351,50 @@ header{
 /* first section end */
 
 /* second section */
-
+.cards-section{
+    padding: 203px 0px 160px;
+}
+.cards-box{
+    max-width: 1170px;
+    height: 730px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 10px;
+}
+.cards{
+    max-width: 285px;
+    height: 360px;
+    width: 100%;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.cards img{
+    width: 60px;
+    height: 60px;
+}
+.cards span{
+    font-size: 22px;
+    font-family: GlacialIndifference-Bold;
+    color: #222222;
+}
+.empty{
+    background-color: #15263E;
+}
+.empty h2{
+    color: #FFFFFF;
+    font-size: 22px;
+    font-family: GlacialIndifference-Bold;
+}
+.empty span{
+    font-family: Muli-Light;
+    font-size: 14px;
+    color: #ECECEC;
+    max-width: 222px;
+    text-align: center;
+}

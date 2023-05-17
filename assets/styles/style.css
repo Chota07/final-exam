@@ -145,9 +145,10 @@ header{
     width: 100%;
 }
 .about-sec-top-container{
+    width: 100%;
     display: flex;
     padding-bottom: 100px;
-    align-items: center;
+    justify-content: center;
 }
 .section-photo{
     width: 430px;
@@ -193,12 +194,16 @@ header{
     margin-left: auto;
 }
 .hire-me-btn:hover{
+    transition: 0.7s;
+    cursor: pointer;
     background-color: #15263E;
 }
 .section-progress{
     display: flex;
     flex-direction: column;
     gap: 23px;
+    width: 100%;
+    max-width: 334px;
 }
 .sec-lable{
     color: #555555;
@@ -248,6 +253,7 @@ header{
     background-color: #F9F9F9;
 }
 .section-icons img:hover{
+    transition: 0.7s;
     background-color: #15263ee0;
 }
 @keyframes design-bar {
@@ -338,6 +344,11 @@ header{
     box-sizing: content-box;
 }
 .sec-box:hover{
+    transition: 0.7s;
     background-color: #E93656;
     border: none;
 }
+/* first section end */
+
+/* second section */
+

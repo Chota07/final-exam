@@ -109,7 +109,7 @@ header{
 .satisfied-clients{
     color: #212121;
 }
-.progress-container{
+.header-progress-container{
     width: 340px;
     height: 6px;
     background-color: #EBEBEB;
@@ -118,7 +118,7 @@ header{
     margin-bottom: 47px;
     margin-right: 117px;
 }
-.progress-bar{
+.header-progress-bar{
     height: 6px;
     background-color: #E93656;
     border-radius: 3px;
@@ -133,4 +133,211 @@ header{
     }
 }
 
-/* header */
+/* header  end*/
+
+/* section */
+.about-me-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 135px;
+    max-height: 913px;
+    width: 100%;
+}
+.about-sec-top-container{
+    display: flex;
+    padding-bottom: 100px;
+    align-items: center;
+}
+.section-photo{
+    width: 430px;
+    height: 603px;
+    background-color: #555555;
+    margin-left: 65px;
+    margin-right: 69px;
+}
+.hire-me-container{
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+}
+.hire-me-name{
+    font-size: 40px;
+    color: #222222;
+    font-family: GlacialIndifference-Bold;
+}
+.web-design-span{
+    font-size: 14px;
+    font-family: muli;
+    color: #DAAE19;
+    margin-top: 6px;
+}
+.hire-me-container p{
+    max-width: 334px;
+    height: 149px;
+    font-size: 15px;
+    color: #555555;
+    font-family: Muli-Regular;
+    margin-top: 33px;
+    margin-bottom: 60px;
+    text-align: end;
+}
+.hire-me-btn{
+    font-size: 14px;
+    color: white;
+    font-family: GlacialIndifference-Bold;
+    padding: 13px 46px 17px 54px;
+    background-color: #E93656;
+    border: none;
+    max-width: 152px;
+    margin-left: auto;
+}
+.hire-me-btn:hover{
+    background-color: #15263E;
+}
+.section-progress{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+.sec-lable{
+    color: #555555;
+    font-size: 20px;
+    font-family: GlacialIndifference-Bold;
+}
+.sec-percent{
+    font-size: 20px;
+    color: #E93656;
+    font-family: GlacialIndifference-Bold;
+}
+.sec-progress-conteiner{
+    max-width: 300px;
+    height: 9px;
+    background-color: #F0F0F0;
+    margin-top: 15px;
+}
+.progress-bar-design{
+    height: 9px;
+    background-color: #E93656;
+    animation: design-bar 4s ease-in-out forwards;
+}
+.progress-bar-photography{
+    height: 9px;
+    background-color: #E93656;
+    animation: photography-bar 4s ease-in-out forwards;
+}
+.progress-bar-marking{
+    height: 9px;
+    background-color: #E93656;
+    animation: marking-bar 4s ease-in-out forwards;
+}
+.progress-bar-photoshop{
+    height: 9px;
+    background-color: #E93656;
+    animation: photoshop-bar 4s ease-in-out forwards;
+}
+.section-icons{
+    margin-top: 78px;
+    display: flex;
+    gap: 5px;
+}
+.section-icons img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: #F9F9F9;
+}
+.section-icons img:hover{
+    background-color: #15263ee0;
+}
+@keyframes design-bar {
+    0% {
+        width: 0%;
+      }
+      100% {
+        width: 80%;
+      }
+}
+@keyframes photography-bar {
+    0% {
+        width: 0%;
+      }
+      100% {
+        width: 65%;
+      }
+}
+@keyframes marking-bar {
+    0% {
+        width: 0%;
+      }
+      100% {
+        width: 50%;
+      }
+}
+@keyframes photoshop-bar {
+    0% {
+        width: 0%;
+      }
+      100% {
+        width: 30%;
+      }
+}
+.about-sec-bot-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 0px;
+    background-color: #131A36;
+}
+.sec-phone, .sec-address, .sec-mail{
+    display: flex;
+    align-items: center;
+}
+.sec-address{
+    margin-left: 41px;
+    margin-right: 51px;
+}
+.sec-phone div, .sec-address div, .sec-mail div{
+    display: flex;
+    flex-direction: column;
+}
+.about-sec-bot-container a{
+    font-size: 14px;
+    color: #DFDFDF;
+    font-family: Muli;
+}
+.about-sec-bot-container span{
+    color: #FFFFFF;
+    font-size: 25px;
+    font-family: GlacialIndifference-Bold;
+    margin-bottom: 15px;
+}
+.phone-img-box{
+    width: 30px;
+    height: 30px;
+    padding: 30px;
+    margin-right: 29px;
+    border-radius: 50%;
+    box-sizing: content-box;
+}
+.address-img-box{
+    width: 30px;
+    height: 30px;
+    padding: 30px;
+    margin-right: 29px;
+    border-radius: 50%;
+    box-sizing: content-box;
+}
+.mail-img-box{
+    width: 30px;
+    height: 23px;
+    padding: 34px 30px 33px 30px;
+    margin-right: 29px;
+    border-radius: 50%;
+    box-sizing: content-box;
+}
+.sec-box:hover{
+    background-color: #E93656;
+    border: none;
+}

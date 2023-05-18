@@ -528,20 +528,26 @@ header{
     font-family: GlacialIndifference-Bold;
     margin-bottom: 79px;
 }
-.la-card-a, .la-box-b, .la-box-c{
+.la-card-a, .la-card-b, .la-card-c{
     height: 590px;
     display: flex;
+    width: 100%;
 }
 .la-card-a{
     display: flex;
     justify-content: end;
 }
 .la-img{
-    max-width: 950px;
+    max-width: 827px;
     width: 100%;
     background-color: #E1E0DC;
 }
-.la-box-a{
+.la-img-b{
+    max-width: 847px;
+    width: 100%;
+    background-color: #E1E0DC;
+}
+.la-box-a, .la-box-b, .la-box-c{
     max-width: 800px;
     width: 100%;
     height: 100%;
@@ -555,10 +561,16 @@ header{
     max-width: 95px;
     max-height: 95px;
 }
+.la-box-a img, .la-box-b img, .la-box-c img{
+    max-width: 95px;
+    max-height: 95px;
+}
 .la-box-a span, .la-box-b span, .la-box-c span{
     color: #888888;
     font-size: 14px;
     font-family: Muli;
+    margin-top: 35px;
+    margin-bottom: 6px;
 } 
 
 .latest-articles h3{
@@ -570,6 +582,7 @@ header{
     color: #494949;
     font-size: 16px;
     font-family: Muli;
+    max-width: 569px;
 }
 .latest-articles a{
     color: #494949;
@@ -587,7 +600,8 @@ header{
 }
 .pos-rel{
     position: relative;
-    width: 123px;
+    max-width: 123px;
+    width: 100%;
     background-color: #15263E;
 }
 .card-s{
@@ -601,3 +615,19 @@ header{
     color: #E93656;
     font-family: GlacialIndifference-Bold;
 }
+.la-card-c{
+    justify-content: end;
+}
+.la-box-c{
+    max-width: 970px;
+}
+.la-box-b{
+    padding: 100px 4px 117px 227px;
+}
+.la-box-c{
+    padding: 80px 20px 137px 232px;
+}
+.la-box-c p, .la-box-b p{
+    margin-top: 29px;
+}
+/* fifth sec end */

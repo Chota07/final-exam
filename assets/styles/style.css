@@ -1,12 +1,17 @@
-body{
-    /* overflow-x: hidden; */
-}
+
 header{
     display: flex;
     width: 100%;
-    height: 960px;
-    background-color: #DDDDDD;
+    /* height: 960px; */
     flex-direction: column;
+    position: relative;
+}
+.header-main-img{
+    position: absolute;
+    object-fit: cover;
+    max-height: 960px;
+    width: 100%;
+    z-index: -199;
 }
 .header-top{
     display: flex;
@@ -65,18 +70,16 @@ header{
     margin-left: 6.86px;
 }
 .header-main-middle{
-    height: 173px;
+    height: 97px;
     font-size: 71px;
     font-family: GlacialIndifference-Bold;
     position: relative;
-    margin-bottom: 15.2px;
 }
 .header-main-bottom{
     font-size: 24px;
     font-family: GlacialIndifference-Regular;
-    position: absolute;
-    top: 97.77px;
-    left: 7.58px;
+    margin-top: ;
+    margin-bottom: 45px;
 }
 .header-icons{
     margin-bottom: 13px;
@@ -144,7 +147,6 @@ header{
     flex-direction: column;
     align-items: center;
     margin-top: 135px;
-    max-height: 913px;
     width: 100%;
 }
 .about-sec-top-container{
@@ -154,11 +156,16 @@ header{
     justify-content: center;
 }
 .section-photo{
-    width: 430px;
-    height: 603px;
+    max-width: 430px;
+    max-height: 603px;
     background-color: #555555;
     margin-left: 65px;
     margin-right: 69px;
+}
+.section-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .hire-me-container{
     text-align: end;
@@ -359,12 +366,12 @@ header{
 }
 .cards-box{
     max-width: 1170px;
-    height: 730px;
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin: auto;
-    gap: 10px;
+    gap: 10px;  
 }
 .cards{
     max-width: 285px;
@@ -465,7 +472,6 @@ header{
 /* fourth section */
 .latest-projects{
     width: 100%;
-    height: 1163px;
     padding: 144px 30px 170px 30px;
     display: flex;
     flex-direction: column;
@@ -499,7 +505,6 @@ header{
 .lp-boxes{
     max-width: 900px;
     width: 100%;
-    max-height: 750px;
     display: flex;
     flex-wrap: wrap;
 }

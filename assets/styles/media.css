@@ -1,138 +1,155 @@
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    .header-main-middle{
-        font-size: 25px !important;
-        height: 50px !important;
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .hide{
+        display: none !important;
     }
-    .header-main-bottom{
-        font-size: 12px !important;
-    }
-    .header-main-img{
-        width: 100%;
-        height: auto;
-    }
-    .clients-header{
-        font-size: 16px !important;
-    }
-    .header-progress-container{
-        max-width: 250px !important;
-    }
-    .aboutme-number{
-        font-size: 40px !important;
-        color: #1c1c1cba !important;
-    }
-    .aboutme-header-text{
-        max-width: 110px !important;
-        font-size: 20px !important;
-    }
-    .header-top{
-        margin-bottom: 30px !important;
-    }
-    .header-main-top{
-        font-size: 20px !important;
+    header{
+        min-height: 180px !important;
+        height: auto !important;
+        position: relative;
     }
     .header-main{
-        margin-bottom: 30px !important;
+        margin: 0px !important;
+        margin-left: 45% !important;
+        margin-right: 10px !important;
+        margin-bottom: 40px !important;
     }
-    .hire-me-name{
-        font-size: 25px !important;
+    .header-main-img{
+        height: 100% !important;
     }
-    .about-sec-top-container{
-        display: grid !important;
-        grid-template-columns: 50% 50%;
-        grid-template-areas: 
-        'img progress'
-        'text text'
-        ;
+    .header-main-top{
+        font-size: 14px !important;
     }
-    .hire-me-container{
-        align-items: center;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        grid-area: text;
+    .header-main-middle{
+        font-size:  18px !important;
+        height: auto !important;
     }
-    .hire-me-container p{
-        max-width: 600px !important;
-        text-align: start !important;
-        margin-bottom: 20px !important;
+    .header-main-bottom{
+        font-size: 8px !important;
+        height: auto !important;
+        margin-bottom: 0px !important;
     }
-    .section-photo{
-        grid-area: img;
+    .roca-with-dot{
+        font-size: 16px !important;
+    }
+    .roca-header{
+        margin-top: 10px !important;
+        margin-left: 10px !important;
+        width: auto !important;
+        height: auto !important;
+    }
+    .resume-template{
+        font-size: 5px !important;
+    }
+    .header-top{
+        margin-bottom: auto !important;
+    }
+    .aboutme-header{
+        margin: 0px !important;
+        margin-top: 10px !important;
+        margin-right: 20px !important;
+    }
+    .aboutme-number{
+        font-size: 20px !important;
+    }
+    .aboutme-header-text{
+        font-size: 8px !important;
+        width: 45px !important;
+    }
+    .clients-header{
+        font-size: 10px !important;
+        margin-left: auto !important;
+        margin-right: 35px !important;
+    }
+    .header-progress-container{
+        width: 140px !important;
+        margin-left: auto !important;
+        margin-right: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    .about-me-sec{
+        margin-top: 20px !important;
     }
     .section-progress{
-        grid-area: progress;
+        margin: auto !important;
+    }
+    .about-sec-top-container{
+        flex-direction: column-reverse;
+    }
+    .about-sec-top-container{
+        padding: 20px !important;
+    }
+    .sec-lable, .sec-percent{
+        font-size: 14px !important;
+    }
+    .section-icons{
+        margin-top: 50px !important;
         margin: auto;
+        margin-bottom: 30px !important;
+    }
+    .section-photo{
+        margin: auto !important;
+        height: 396px !important;
+        margin-bottom: 30px !important;
+    }
+    .section-photo img{
+        height: 396px !important;
+    }
+    .hire-me-container{
+        margin: auto !important;
+    }
+    .hire-me-container, .hire-me-container p{
+        text-align: start !important;
+    }
+    .hire-me-name{
+        font-size: 30px !important;
+    }
+    .web-design-span{
+        font-size: 10px !important;
     }
     .hire-me-btn{
-        margin: auto;
+        margin: auto !important;
+    }
+    .about-sec-bot-container{
+        flex-direction: column;
+    }
+    .about-sec-bot-container span{
+        font-size: 20px !important;
     }
     .about-sec-bot-container a{
         font-size: 10px !important;
     }
-    .about-sec-bot-container span{
-        font-size: 14px !important;
+    .sec-address{
+        margin: 0px !important;
+        width: 223.07px !important;
     }
-    .mail-img-box, .address-img-box, .phone-img-box{
-        margin-right: 15px !important;
+    .about-sec-bot-container div{
+        margin: auto !important;
     }
-    .latest-projects nav{
-        display: none !important;
-    }
-    .lp-boxes{
-        justify-content: center;
+    .cards-section {
+        padding: 50px 0px !important;
     }
     .graphichs-designer{
-        display: grid !important;
-        height: 400px !important;
-        grid-template-columns: 2fr 1fr 1fr;
-        grid-template-areas: 
-        'text text text'
-        'photo quote bullet'
-        ;
-    }
-    .gd-image{
-        grid-area: photo;
-        margin: auto !important;
-    }
-    .gd-quote{
-        grid-area: quote;
-    }
-    .gd-bullets{
-        grid-area: bullet;
-        margin-left: 40px !important;
-    }
-    .gd-text{
-        max-width: 600px !important;
-        grid-area: text;
-        margin: auto !important;
-        text-align: center !important;
-    }
-    .la-box-b{
-        padding: 20px 4px 20px 50px !important;
-    }
-    .latest-articles p{
-        max-width: 400px !important;
-    }
-    .la-box-a, .la-box-b, .la-box-c{
-        max-width: 450.5px !important;
-    }
-    .la-box-c {
-        padding: 30px 20px 137px 32px !important;
-    }
-    .rosa-team img{
-        max-width: 172.5px !important;
-        height: 142.5px !important;
-        padding: 30px 45px !important;
-    }
-    .rosa-team div{
+        flex-direction: column;
+        padding: 40px 30px 20px !important;
         height: auto !important;
     }
-    .rosa-team h2{
-        font-size: 40px !important;
+    .gd-text{
+        font-size: 12px !important;
+        margin: auto;
+        margin-top: 0px !important;
+        margin-bottom: 30px !important;
+        text-align: start !important;
     }
-    .con-us-box{
-        padding: 0px 20px !important;
+    .gd-image{
+        margin: auto !important;
+        margin-bottom: 30px !important;
+        margin-top: 0px !important;
     }
-    body{
-        width: 100%;
+    .gd-bullets{
+        flex-direction: row !important;
+        margin-left: 0px !important;
+        margin: auto !important;
+        margin-top: 30px !important;
+        margin-bottom: 0px !important;
     }
 }

@@ -879,3 +879,141 @@ footer{
         padding: 30px 20px 137px 32px !important;
     }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .header-main-middle{
+        font-size: 25px !important;
+        height: 50px !important;
+    }
+    .header-main-bottom{
+        font-size: 12px !important;
+    }
+    .header-main-img{
+        width: 100%;
+        height: auto;
+    }
+    .clients-header{
+        font-size: 16px !important;
+    }
+    .header-progress-container{
+        max-width: 250px !important;
+    }
+    .aboutme-number{
+        font-size: 40px !important;
+        color: #1c1c1cba !important;
+    }
+    .aboutme-header-text{
+        max-width: 110px !important;
+        font-size: 20px !important;
+    }
+    .header-top{
+        margin-bottom: 30px !important;
+    }
+    .header-main-top{
+        font-size: 20px !important;
+    }
+    .header-main{
+        margin-bottom: 30px !important;
+    }
+    .hire-me-name{
+        font-size: 25px !important;
+    }
+    .about-sec-top-container{
+        display: grid !important;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        'img progress'
+        'text text'
+        ;
+    }
+    .hire-me-container{
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        grid-area: text;
+    }
+    .hire-me-container p{
+        max-width: 600px !important;
+        text-align: start !important;
+        margin-bottom: 20px !important;
+    }
+    .section-photo{
+        grid-area: img;
+    }
+    .section-progress{
+        grid-area: progress;
+        margin: auto;
+    }
+    .hire-me-btn{
+        margin: auto;
+    }
+    .about-sec-bot-container a{
+        font-size: 10px !important;
+    }
+    .about-sec-bot-container span{
+        font-size: 14px !important;
+    }
+    .mail-img-box, .address-img-box, .phone-img-box{
+        margin-right: 15px !important;
+    }
+    .latest-projects nav{
+        display: none !important;
+    }
+    .lp-boxes{
+        justify-content: center;
+    }
+    .graphichs-designer{
+        display: grid !important;
+        height: 400px !important;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas: 
+        'text text text'
+        'photo quote bullet'
+        ;
+    }
+    .gd-image{
+        grid-area: photo;
+        margin: auto !important;
+    }
+    .gd-quote{
+        grid-area: quote;
+    }
+    .gd-bullets{
+        grid-area: bullet;
+        margin-left: 40px !important;
+    }
+    .gd-text{
+        max-width: 600px !important;
+        grid-area: text;
+        margin: auto !important;
+        text-align: center !important;
+    }
+    .la-box-b{
+        padding: 20px 4px 20px 50px !important;
+    }
+    .latest-articles p{
+        max-width: 400px !important;
+    }
+    .la-box-a, .la-box-b, .la-box-c{
+        max-width: 450.5px !important;
+    }
+    .la-box-c {
+        padding: 30px 20px 137px 32px !important;
+    }
+    .rosa-team img{
+        max-width: 172.5px !important;
+        height: 142.5px !important;
+        padding: 30px 45px !important;
+    }
+    .rosa-team div{
+        height: auto !important;
+    }
+    .rosa-team h2{
+        font-size: 40px !important;
+    }
+    .con-us-box{
+        padding: 0px 20px !important;
+    }
+    body{
+        width: 100%;
+    }
+}

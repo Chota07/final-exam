@@ -69,4 +69,54 @@ function handleIntersection(entries, observer) {
   progressBars.forEach(function(progressBar) {
     observer.observe(progressBar);
   });
-  
+
+
+var cards = document.querySelectorAll('.cards');
+cards.forEach(function(card, index) {
+  card.addEventListener('click', function() {
+    var nextEmptyCard = card.nextElementSibling;
+    var emptyCards = document.querySelectorAll('.empty');
+
+    if (nextEmptyCard && nextEmptyCard.classList.contains('empty')) {
+      nextEmptyCard.classList.remove('empty-hide');
+    }
+    emptyCards.forEach(function(emptyCard) {
+      if (emptyCard !== nextEmptyCard) {
+        emptyCard.classList.add('empty-hide');
+      }
+    });
+  });
+});
+
+var keyA = document.querySelector('.key-a');
+var keyB = document.querySelector('.key-b');
+var keyC = document.querySelector('.key-c');
+var gdCardA = document.querySelector('.gd-card-a');
+var gdCardB = document.querySelector('.gd-card-b');
+var gdCardC = document.querySelector('.gd-card-c');
+
+keyA.addEventListener('click', function() {
+  switchCards('a');
+});
+
+keyB.addEventListener('click', function() {
+  switchCards('b');
+});
+
+keyC.addEventListener('click', function() {
+  switchCards('c');
+});
+
+function switchCards(key) {
+  gdCardA.classList.add('gd-hide');
+  gdCardB.classList.add('gd-hide');
+  gdCardC.classList.add('gd-hide');
+
+  if (key === 'a') {
+    gdCardA.classList.remove('gd-hide');
+  } else if (key === 'b') {
+    gdCardB.classList.remove('gd-hide');
+  } else if (key === 'c') {
+    gdCardC.classList.remove('gd-hide');
+  }
+}

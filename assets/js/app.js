@@ -11,6 +11,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
   window.addEventListener('resize', setHeaderImgHeight);
 });
+
 const images = document.querySelectorAll('.header-main-img');
 let currentIndex = 0;
 
@@ -32,3 +33,40 @@ function nextImage() {
 }
 setInterval(nextImage, 5000);
 showImage(currentIndex);
+
+function stopAnimations() {
+  var progressBarDesign = document.querySelector('.progress-bar-design');
+  var progressBarPhotography = document.querySelector('.progress-bar-photography');
+  var progressBarMarking = document.querySelector('.progress-bar-marking');
+  var progressBarPhotoshop = document.querySelector('.progress-bar-photoshop');
+
+  progressBarDesign.style.animationPlayState = 'paused';
+  progressBarPhotography.style.animationPlayState = 'paused';
+  progressBarMarking.style.animationPlayState = 'paused';
+  progressBarPhotoshop.style.animationPlayState = 'paused';
+}
+stopAnimations();
+
+function handleIntersection(entries, observer) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+        var progressBarDesign = document.querySelector('.progress-bar-design');
+        var progressBarPhotography = document.querySelector('.progress-bar-photography');
+        var progressBarMarking = document.querySelector('.progress-bar-marking');
+        var progressBarPhotoshop = document.querySelector('.progress-bar-photoshop');
+        
+        progressBarDesign.style.animationPlayState = 'running';
+        progressBarPhotography.style.animationPlayState = 'running';
+        progressBarMarking.style.animationPlayState = 'running';
+        progressBarPhotoshop.style.animationPlayState = 'running';
+        
+        observer.unobserve(entry.target);
+      }
+    });
+  }
+  var progressBars = document.querySelectorAll('.sec-progress-conteiner');
+  var observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+  progressBars.forEach(function(progressBar) {
+    observer.observe(progressBar);
+  });
+  

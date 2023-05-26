@@ -176,3 +176,54 @@ form.addEventListener('submit', function (event) {
 modalClose.addEventListener('click', function () {
   modal.classList.remove('modal-active');
 });
+
+
+var listItems = document.querySelectorAll('li');
+
+listItems.forEach(function(item) {
+  item.addEventListener('click', function() {
+    item.classList.add('li-red');
+    var redLine = item.querySelector('div');
+    if (redLine) {
+      redLine.classList.add('red-line');
+    }
+    listItems.forEach(function(li) {
+      if (li !== item) {
+        li.classList.remove('li-red');
+      }
+    });
+    var redLines = document.querySelectorAll('li div.red-line');
+    redLines.forEach(function(line) {
+      if (line !== redLine) {
+        line.classList.remove('red-line');
+      }
+    });
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var liElements = document.querySelectorAll(".lp nav ul li");
+  var lpActiveElements = document.querySelectorAll(".lp-boxes .lp-active");
+  liElements.forEach(function(li, index) {
+    li.addEventListener("click", function() {
+      if (index === 0) {
+        lpActiveElements.forEach(function(lpActive) {
+          lpActive.classList.remove("lp-hide");
+          lpActive.classList.remove("lp-card");
+          lpActive.classList.add("lp-active");
+        });
+      } else {
+        lpActiveElements.forEach(function(lpActive, lpIndex) {
+          if (index - 1 === lpIndex) {
+            lpActive.classList.remove("lp-hide");
+            lpActive.classList.remove("lp-active");
+            lpActive.classList.add("lp-card");
+          } else {
+            lpActive.classList.add("lp-hide");
+          }
+        });
+      }
+    });
+  });
+});

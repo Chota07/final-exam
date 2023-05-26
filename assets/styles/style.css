@@ -532,14 +532,55 @@ header{
     display: flex;
     flex-wrap: wrap;
 }
-.lp-boxes div{
-    width: 500px;
-    max-width: 300px;
+.lp-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 900px;
+    height: 700px;
+    background-color: #555555;
+    align-items: center;
+    justify-content: center;
+}
+.lp-active{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
     height: 350px;
     background-color: #555555;
+    align-items: center;
+    justify-content: center;
+}
+.lp-hide{
+    display: none;
+}
+.lp img{
+    border: 1px solid #E93656;
+    border-radius: 50%;
+    padding: 19px 18px;
+}
+.lp-boxes span{
+    color: #FFFFFF;
+    font-size: 23px;
+    font-family: GlacialIndifference-Bold;
 }
 .lp{
     display: flex;
+}
+.red-line{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -80px;
+    max-width: 70px;
+    width: 100%;
+    height: 2px;
+    background-color: #E93656;;
+}
+.li-red{
+    color: #E93656 !important;
+    position: relative;
 }
 /* fourth sec end */
 
@@ -959,8 +1000,12 @@ footer{
     .la-box-c {
         padding: 30px 20px 137px 32px !important;
     }
+    .lp-card{
+        width: 300px !important;
+        height: 401px !important;
+    }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 768px) and (max-width: 1023px){
     .header-main-middle{
         font-size: 25px !important;
         height: 50px !important;
@@ -1040,8 +1085,14 @@ footer{
     .mail-img-box, .address-img-box, .phone-img-box{
         margin-right: 15px !important;
     }
-    .latest-projects nav{
-        display: none !important;
+    .lp{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .lp-card{
+        width: 300px !important;
+        height: 401px !important;
     }
     .lp-boxes{
         justify-content: center;
@@ -1102,6 +1153,10 @@ footer{
     }
 }
 @media screen and (min-width: 320px) and (max-width: 767px){
+    .lp-card{
+        width: 300px !important;
+        height: 401px !important;
+    }
     .hide-m{
         display: none !important;
     }

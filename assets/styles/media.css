@@ -152,4 +152,94 @@
         margin-top: 30px !important;
         margin-bottom: 0px !important;
     }
+    .latest-projects{
+        padding: 30px 0px !important;
+    }
+    .latest-projects h2, .latest-articles h2, .rosa-team h2{
+        font-size: 35px !important;
+    }
+    .lp{
+        flex-direction: column;
+        align-items: center;
+    }
+    .lp-boxes{
+        justify-content: center !important;
+    }
+    .latest-projects nav{
+        margin: 0px !important;
+        margin: auto !important;
+        margin-bottom: 15px !important;
+    }
+    .latest-articles h2{
+        margin-bottom: 30px !important;
+    }
+    .la-card-a, .la-card-c{
+        flex-direction: column-reverse !important;
+        height: auto !important;
+        margin-bottom: 30px !important;
+    }
+    .la-card-b{
+        flex-direction: column !important;
+        height: auto !important;
+        margin-bottom: 30px !important;
+    }
+    .pos-rel{
+        max-width: 100% !important;
+        height: 123px !important;
+    }
+    .card-s{
+        transform: none !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+    .la-box-a, .la-box-b, .la-box-c{
+        padding: 30px !important;
+    }
+    .la-box-a img{
+        margin-top: 3px !important;
+    }
+    .la-img, .la-img-b{
+        height: 200px !important;
+    }
+    .rosa-team div{
+        flex-wrap: wrap !important;
+        height: auto !important;
+        align-items: center !important;
+    }
+    .rosa-team{
+        padding: 30px 0px !important;
+    }
+    form div{
+        flex-direction: column !important;
+        gap: 0px !important;
+    }
+    input, textarea{
+        max-width: 100% !important;
+        }
+    form{
+        padding: 0px 20px !important;
+    }
+    .con-us{
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+    .con-us-box h2{
+        font-size: 16px !important;
+    }
+    .con-us-box span{
+        font-size: 12px !important;
+    }
+    .footer-roca{
+        font-size: 30px !important;
+    }
+    .footer-lorem{
+        font-size: 12px !important;
+        width: 90% !important;
+        margin: auto !important;
+    }
+    .copyright{
+        font-size: 10px !important;
+    }
 }

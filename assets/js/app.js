@@ -88,25 +88,31 @@ cards.forEach(function(card, index) {
   });
 });
 
+
 var keyA = document.querySelector('.key-a');
 var keyB = document.querySelector('.key-b');
 var keyC = document.querySelector('.key-c');
 var gdCardA = document.querySelector('.gd-card-a');
 var gdCardB = document.querySelector('.gd-card-b');
 var gdCardC = document.querySelector('.gd-card-c');
-
 keyA.addEventListener('click', function() {
   switchCards('a');
+  keyA.classList.add('red');
+  keyB.classList.remove('red');
+  keyC.classList.remove('red');
 });
-
 keyB.addEventListener('click', function() {
   switchCards('b');
+  keyA.classList.remove('red');
+  keyB.classList.add('red');
+  keyC.classList.remove('red');
 });
-
 keyC.addEventListener('click', function() {
   switchCards('c');
+  keyA.classList.remove('red');
+  keyB.classList.remove('red');
+  keyC.classList.add('red');
 });
-
 function switchCards(key) {
   gdCardA.classList.add('gd-hide');
   gdCardB.classList.add('gd-hide');
@@ -120,3 +126,53 @@ function switchCards(key) {
     gdCardC.classList.remove('gd-hide');
   }
 }
+
+
+var rosaImgs = document.querySelectorAll('.rosa-img');
+var rosaCards = document.querySelectorAll('.rosa-card');
+
+for (var i = 0; i < rosaImgs.length; i++) {
+  rosaImgs[i].addEventListener('click', function(event) {
+    event.target.classList.toggle('empty-hide');
+    var nextCard = event.target.nextElementSibling;
+    if (nextCard && nextCard.classList.contains('rosa-card')) {
+      nextCard.classList.remove('empty-hide');
+    }
+  });
+}
+for (var i = 0; i < rosaCards.length; i++) {
+  rosaCards[i].addEventListener('click', function(event) {
+    if (!event.target.matches('h4, span')) {
+      event.target.classList.toggle('empty-hide');
+      var previousImg = event.target.previousElementSibling;
+      if (previousImg && previousImg.classList.contains('rosa-img')) {
+        previousImg.classList.remove('empty-hide');
+      }
+    }
+  });
+}
+
+
+const form = document.querySelector('form');
+const modal = document.getElementById('modal');
+const modalClose = modal.querySelector('.close');
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+  const formData = new FormData(form);
+
+  fetch('https://borjomi.loremipsum.ge/api/send-message', {
+    method: 'POST',
+    body: formData
+  })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      modal.classList.add('modal-active');
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+});
+modalClose.addEventListener('click', function () {
+  modal.classList.remove('modal-active');
+});

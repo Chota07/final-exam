@@ -1,18 +1,25 @@
-
+.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+.active {
+    opacity: 1;
+}
 header{
     display: flex;
     width: 100%;
-    /* height: 960px; */
     flex-direction: column;
     position: relative;
 }
 .header-main-img{
-    position: absolute;
     object-fit: cover;
-    max-height: 960px;
-    height: 100%;
     width: 100%;
-    z-index: -199;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: -1;
 }
 .header-top{
     display: flex;
@@ -894,6 +901,10 @@ footer{
     .clients-header{
         font-size: 16px !important;
     }
+    .header-icons{
+        /* margin-top: 10px !important; */
+        padding-left: 0px !important;
+    }
     .header-progress-container{
         max-width: 250px !important;
     }
@@ -1015,5 +1026,249 @@ footer{
     }
     body{
         width: 100%;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .hide-m{
+        display: none !important;
+    }
+    header{
+        height: auto !important;
+        position: relative;
+    }
+    .header-main{
+        margin: 0px !important;
+        margin-left: 45% !important;
+        margin-right: 10px !important;
+        margin-bottom: 40px !important;
+    }
+    .header-main-img{
+        height: 100% !important;
+    }
+    .header-main-top{
+        font-size: 14px !important;
+    }
+    .header-main-middle{
+        font-size:  18px !important;
+        height: auto !important;
+    }
+    .header-main-bottom{
+        font-size: 8px !important;
+        height: auto !important;
+        margin-bottom: 0px !important;
+    }
+    .roca-with-dot{
+        font-size: 16px !important;
+    }
+    .roca-header{
+        margin-top: 10px !important;
+        margin-left: 10px !important;
+        width: auto !important;
+        height: auto !important;
+    }
+    .resume-template{
+        font-size: 5px !important;
+    }
+    .header-top{
+        margin-bottom: auto !important;
+    }
+    .aboutme-header{
+        margin: 0px !important;
+        margin-top: 10px !important;
+        margin-right: 20px !important;
+    }
+    .aboutme-number{
+        font-size: 20px !important;
+    }
+    .aboutme-header-text{
+        font-size: 8px !important;
+        width: 45px !important;
+    }
+    .clients-header{
+        font-size: 10px !important;
+        margin-left: auto !important;
+        margin-right: 35px !important;
+    }
+    .header-progress-container{
+        width: 140px !important;
+        margin-left: auto !important;
+        margin-right: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    .about-me-sec{
+        margin-top: 20px !important;
+    }
+    .section-progress{
+        margin: auto !important;
+    }
+    .about-sec-top-container{
+        flex-direction: column-reverse;
+    }
+    .about-sec-top-container{
+        padding: 20px !important;
+    }
+    .sec-lable, .sec-percent{
+        font-size: 14px !important;
+    }
+    .section-icons{
+        margin-top: 50px !important;
+        margin: auto;
+        margin-bottom: 30px !important;
+    }
+    .section-photo{
+        margin: auto !important;
+        height: 396px !important;
+        margin-bottom: 30px !important;
+    }
+    .section-photo img{
+        height: 396px !important;
+    }
+    .hire-me-container{
+        margin: auto !important;
+    }
+    .hire-me-container, .hire-me-container p{
+        text-align: start !important;
+    }
+    .hire-me-name{
+        font-size: 30px !important;
+    }
+    .web-design-span{
+        font-size: 10px !important;
+    }
+    .hire-me-btn{
+        margin: auto !important;
+    }
+    .about-sec-bot-container{
+        flex-direction: column;
+    }
+    .about-sec-bot-container span{
+        font-size: 20px !important;
+    }
+    .about-sec-bot-container a{
+        font-size: 10px !important;
+    }
+    .sec-address{
+        margin: 0px !important;
+        width: 223.07px !important;
+    }
+    .about-sec-bot-container div{
+        margin: auto !important;
+    }
+    .cards-section {
+        padding: 50px 0px !important;
+    }
+    .graphichs-designer{
+        flex-direction: column;
+        padding: 40px 30px 20px !important;
+        height: auto !important;
+    }
+    .gd-text{
+        font-size: 12px !important;
+        margin: auto;
+        margin-top: 0px !important;
+        margin-bottom: 30px !important;
+        text-align: start !important;
+    }
+    .gd-image{
+        margin: auto !important;
+        margin-bottom: 30px !important;
+        margin-top: 0px !important;
+    }
+    .gd-bullets{
+        flex-direction: row !important;
+        margin-left: 0px !important;
+        margin: auto !important;
+        margin-top: 30px !important;
+        margin-bottom: 0px !important;
+    }
+    .latest-projects{
+        padding: 30px 0px !important;
+    }
+    .latest-projects h2, .latest-articles h2, .rosa-team h2{
+        font-size: 35px !important;
+    }
+    .lp{
+        flex-direction: column;
+        align-items: center;
+    }
+    .lp-boxes{
+        justify-content: center !important;
+    }
+    .latest-projects nav{
+        margin: 0px !important;
+        margin: auto !important;
+        margin-bottom: 15px !important;
+    }
+    .latest-articles h2{
+        margin-bottom: 30px !important;
+    }
+    .la-card-a, .la-card-c{
+        flex-direction: column-reverse !important;
+        height: auto !important;
+        margin-bottom: 30px !important;
+    }
+    .la-card-b{
+        flex-direction: column !important;
+        height: auto !important;
+        margin-bottom: 30px !important;
+    }
+    .pos-rel{
+        max-width: 100% !important;
+        height: 123px !important;
+    }
+    .card-s{
+        transform: none !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+    .la-box-a, .la-box-b, .la-box-c{
+        padding: 30px !important;
+    }
+    .la-box-a img{
+        margin-top: 3px !important;
+    }
+    .la-img, .la-img-b{
+        height: 200px !important;
+    }
+    .rosa-team div{
+        flex-wrap: wrap !important;
+        height: auto !important;
+        align-items: center !important;
+    }
+    .rosa-team{
+        padding: 30px 0px !important;
+    }
+    form div{
+        flex-direction: column !important;
+        gap: 0px !important;
+    }
+    input, textarea{
+        max-width: 100% !important;
+        }
+    form{
+        padding: 0px 20px !important;
+    }
+    .con-us{
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+    .con-us-box h2{
+        font-size: 16px !important;
+    }
+    .con-us-box span{
+        font-size: 12px !important;
+    }
+    .footer-roca{
+        font-size: 30px !important;
+    }
+    .footer-lorem{
+        font-size: 12px !important;
+        width: 90% !important;
+        margin: auto !important;
+    }
+    .copyright{
+        font-size: 10px !important;
     }
 }

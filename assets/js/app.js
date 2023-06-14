@@ -1,16 +1,21 @@
 window.addEventListener('DOMContentLoaded', function() {
-  const headers = document.querySelector('.headers');
-  const headerImg = document.querySelector('.header-main-img');
+  const headers = document.querySelector('.header');
 
   function setHeaderImgHeight() {
-    const headersHeight = headers.offsetHeight;
-    headerImg.style.height = headersHeight + 'px';
+    const headerImgs = headers.querySelectorAll('.header-main-img');
+    if (headers && headerImgs.length > 0) {
+      const headersHeight = headers.offsetHeight;
+      headerImgs.forEach(function(img) {
+        img.style.height = headersHeight + 'px';
+      });
+    }
   }
 
   setHeaderImgHeight();
 
   window.addEventListener('resize', setHeaderImgHeight);
 });
+
 
 const images = document.querySelectorAll('.header-main-img');
 let currentIndex = 0;
